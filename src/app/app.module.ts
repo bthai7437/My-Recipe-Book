@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material';
+import { MatToolbarModule,MatButtonModule } from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 
@@ -22,7 +22,8 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
