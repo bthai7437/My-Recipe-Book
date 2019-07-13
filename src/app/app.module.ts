@@ -8,12 +8,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
+    MarketplaceComponent,
   ],
   imports: [
     BrowserModule,
