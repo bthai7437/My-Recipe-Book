@@ -8,11 +8,11 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'kitchen', component: KitchenComponent},
-  {path: 'profile', component: ProfileComponent},
-  {path: 'recipe', component: RecipeComponent},
-  {path: 'marketplace', component: MarketplaceComponent}
+  {path: 'home', component: HomeComponent, data: { animation: 'isRight' }},
+  {path: 'kitchen', component: KitchenComponent, data: { animation: 'isRight' }},
+  {path: 'profile', component: ProfileComponent, data: { animation: 'isRight' }},
+  {path: 'recipe', component: RecipeComponent, data: { animation: 'isRight' }},
+  {path: 'marketplace', component: MarketplaceComponent, data: { animation: 'isRight' }}
 
 ];
 
