@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatButtonModule } from '@angular/material';
+import { MatToolbarModule,
+         MatButtonModule,
+         MatCardModule} from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RecipeComponent } from './recipe/recipe.component';
+import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,7 @@ import { RecipeComponent } from './recipe/recipe.component';
     KitchenComponent,
     ProfileComponent,
     RecipeComponent,
+    RecipeCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { RecipeComponent } from './recipe/recipe.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     FlexLayoutModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
