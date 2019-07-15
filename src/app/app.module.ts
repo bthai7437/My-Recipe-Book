@@ -14,7 +14,6 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RecipeComponent } from './recipe/recipe.component';
-import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,7 @@ import { RecipeCardComponent } from './recipe-card/recipe-card.component';
     KitchenComponent,
     ProfileComponent,
     RecipeComponent,
-    RecipeCardComponent,
+
   ],
   imports: [
     BrowserModule,
