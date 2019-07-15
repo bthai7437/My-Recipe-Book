@@ -17,7 +17,7 @@ export class AppComponent {
   title = 'My-Recipe-Book';
 
   prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+    return outlet.isActivated ? outlet.activatedRoute : '';
   }
 }
 
