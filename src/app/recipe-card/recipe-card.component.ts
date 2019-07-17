@@ -9,6 +9,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class RecipeCardComponent implements OnInit {
 
   @Input() imgSrc: string;
+  @Input() foodCategory: string;
+
   constructor() { }
 
   ngOnInit() {

@@ -8,13 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class RecipeComponent implements OnInit {
 
   cards = [
-    '\assets\Images\recipe-food-breakfast.jpg',
-    '\assets\Images\recipe-food-lunch.jpg',
-    '\assets\Images\recipe-food-dinner.jpg',
-    '\assets\Images\recipe-food-desert.jpg'
+    '/assets/Images/recipe-card/recipe-card-breakfast.jpg',
+    '/assets/Images/recipe-card/recipe-card-lunch.jpg',
+    '/assets/Images/recipe-card/recipe-card-dinner.jpg',
+    '/assets/Images/recipe-card/recipe-card-desert.jpg'
+  ];
+
+  foodCategories = [
+    'Breakfast',
+    'Lunch',
+    'Dinner',
+    'Dessert'
   ];
 
   imgSrc: string;
+  foodCategory: string;
   constructor() { }
 
   ngOnInit() {

@@ -5,9 +5,10 @@
     
 </div>
 
-<div class="container" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
+<div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
     <div *ngFor="let card of cards">
-        <app-recipe-card></app-recipe-card> <!--TODO:pass card string to app-recipe-card -->
+        <app-recipe-card [imgSrc]=card ></app-recipe-card>
     </div>
 </div>
+
 
