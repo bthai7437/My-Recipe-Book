@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { foodDescription } from '../food-description'; 
 
 @Component({
   selector: 'app-recipe-card',
@@ -8,8 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RecipeCardComponent implements OnInit {
 
-  @Input() imgSrc: string;
-  @Input() foodCategory: string;
+  @Input() food:foodDescription;
 
   constructor() { }
 

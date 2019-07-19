@@ -1,11 +1,11 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>{{foodCategory}}</mat-card-title>
+    <mat-card-title>{{food.title}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image src="{{imgSrc}}" alt="default food">
+  <img mat-card-image src="{{food.imgSrc}}" alt="default food">
   <mat-card-content>
     <p>
-      Ingredients Description
+      <span style="display:inline-block; width: 5%;">{{ food.quant }}</span>{{ food.ingredient }}
     </p>
   </mat-card-content>
   <mat-card-actions>

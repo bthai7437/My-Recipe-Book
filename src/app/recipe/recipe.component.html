@@ -2,13 +2,14 @@
 
 <div class = "center">
     <img src="\assets\Images\recipe-cooking.jpg" class="bg">
-    
-</div>
 
-<div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
-    <div *ngFor="let card of cards">
-        <app-recipe-card [imgSrc]=card ></app-recipe-card>
+    <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+        <div *ngFor="let food of foods">
+            <app-recipe-card [food]=food ></app-recipe-card>
+        </div>
     </div>
 </div>
+
+
 
 

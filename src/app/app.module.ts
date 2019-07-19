@@ -16,6 +16,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

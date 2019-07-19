@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { mockFoods } from './mock-foods';
 @Component({
   selector: 'app-recipe',
   templateUrl: './recipe.component.html',
@@ -14,15 +14,10 @@ export class RecipeComponent implements OnInit {
     '/assets/Images/recipe-card/recipe-card-desert.jpg'
   ];
 
-  foodCategories = [
-    'Breakfast',
-    'Lunch',
-    'Dinner',
-    'Dessert'
-  ];
-
-  imgSrc: string;
+  foods = mockFoods;
+ 
   foodCategory: string;
+
   constructor() { }
 
   ngOnInit() {
