@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { foodDescription } from '../food-description'; 
+import { Food } from '../food';
+
 
 @Component({
   selector: 'app-recipe-card',
@@ -8,11 +9,11 @@ import { foodDescription } from '../food-description';
 })
 export class RecipeCardComponent implements OnInit {
 
-  @Input() food:foodDescription;
-
-  constructor() { }
-
-  ngOnInit() {
+  @Input() food: Food;
+  aFood: string;
+  constructor() {
   }
+
+  ngOnInit() {}
 
 }

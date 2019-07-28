@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { mockFoods } from './mock-foods';
+import { Food } from '../food';
+import { FoodDataService } from '../food-data.service';
+
 @Component({
   selector: 'app-recipe',
   templateUrl: './recipe.component.html',
@@ -7,20 +9,17 @@ import { mockFoods } from './mock-foods';
 })
 export class RecipeComponent implements OnInit {
 
-  cards = [
-    '/assets/Images/recipe-card/recipe-card-breakfast.jpg',
-    '/assets/Images/recipe-card/recipe-card-lunch.jpg',
-    '/assets/Images/recipe-card/recipe-card-dinner.jpg',
-    '/assets/Images/recipe-card/recipe-card-desert.jpg'
-  ];
+  foods: any = [];
+  food: Food;
 
-  foods = mockFoods;
- 
-  foodCategory: string;
-
-  constructor() { }
+  constructor(private foodService: FoodDataService) { }
 
   ngOnInit() {
-  }
+      this.foodService.getFoods().subscribe((data) => {
+        this.foods = data;
+        console.log(JSON.stringify(this.foods));
+        
+      });
 
+  }
 }

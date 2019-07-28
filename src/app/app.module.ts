@@ -15,6 +15,8 @@ import { KitchenComponent } from './kitchen/kitchen.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeCardComponent } from './recipe-card/recipe-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FoodDataService } from './food-data.service';
 
 
 @NgModule({
@@ -35,9 +37,10 @@ import { RecipeCardComponent } from './recipe-card/recipe-card.component';
     MatToolbarModule,
     FlexLayoutModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [FoodDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
