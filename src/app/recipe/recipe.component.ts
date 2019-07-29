@@ -9,17 +9,33 @@ import { FoodDataService } from '../food-data.service';
 })
 export class RecipeComponent implements OnInit {
 
-  foods: any = [];
-  food: Food;
+  foods: Food[] = [];
+  parseFoods: Food[] = [];
 
   constructor(private foodService: FoodDataService) { }
 
   ngOnInit() {
       this.foodService.getFoods().subscribe((data) => {
         this.foods = data;
-        console.log(JSON.stringify(this.foods));
-        
+        let resources = data["foods"];
+        for(var i=0;i<resources.length;i++){
+          this.parseToFood(resources[i]);
+        }
       });
-
   }
+
+ parseToFood(resource) {
+  let food  = {} as Food;
+  food.title = resource["title"];
+  food.ingredients = resource["ingredients"];
+  food.qty = resource["qty"];
+  food.foodImage = resource["foodImage"];
+  
+  console.log(food.title);
+  console.log(food.ingredients);
+  console.log(food.qty);
+  console.log(food.foodImage);
+
+  this.parseFoods.push(food);
+ }
 }
