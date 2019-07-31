@@ -14,13 +14,11 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RecipeComponent } from './recipe/recipe.component';
-<<<<<<< HEAD
-=======
+
 import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodDataService } from './food-data.service';
 
->>>>>>> recipe-cards
 
 @NgModule({
   declarations: [
@@ -31,6 +29,7 @@ import { FoodDataService } from './food-data.service';
     KitchenComponent,
     ProfileComponent,
     RecipeComponent,
+    RecipeCardComponent
 
   ],
   imports: [
