@@ -1,11 +1,31 @@
 
 <div class = "center">
     <img src="\assets\Images\recipe-cooking.jpg" class="bg">
+    
     <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
-        <div *ngFor="let food of foods">
-            <app-recipe-card [food] = "food"></app-recipe-card>
+        <div *ngFor="let breakfast of breakfastFood">
+            <app-recipe-card [food] = "breakfast"></app-recipe-card>
         </div>
     </div>
+
+    <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+        <div *ngFor="let lunch of lunchFood">
+            <app-recipe-card [food] = "lunch"></app-recipe-card>
+        </div>
+    </div>
+
+    <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+        <div *ngFor="let dinner of dinnerFood">
+            <app-recipe-card [food] = "dinner"></app-recipe-card>
+        </div>
+    </div>
+
+    <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+        <div *ngFor="let dessert of desertFood">
+            <app-recipe-card [food] = "dessert"></app-recipe-card>
+        </div>
+    </div>
+
 </div>
 
 

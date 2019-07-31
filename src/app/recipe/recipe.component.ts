@@ -9,8 +9,11 @@ import { FoodDataService } from '../food-data.service';
 })
 export class RecipeComponent implements OnInit {
 
-  foods: Food[] = [];
   parseFoods: Food[] = [];
+  breakfastFood: Food[] = [];
+  lunchFood: Food[] = [];
+  dinnerFood: Food[] = [];
+  desertFood: Food[] = [];
 
   constructor(private foodService: FoodDataService) { }
 
@@ -22,19 +25,41 @@ export class RecipeComponent implements OnInit {
           this.parseToFood(resources[i]);
         }
       });
-      this.foods.forEach(food => {
-        console.log(food.title);
-      });
   }
 
  parseToFood(resource) {
   let food  = {} as Food;
   food.title = resource["title"];
+  food.type = resource["type"];
   food.ingredients = resource["ingredients"];
   food.qty = resource["qty"];
   food.foodImage = resource["foodImage"];
-
-  this.foods.push(food);
+  this.sortFoods(food);
  }
 
+ sortFoods(food: Food) {
+   switch(food.type) {
+    case 'breakfast': {
+      this.breakfastFood.push(food);
+      break;
+    }
+    case 'lunch': {
+      this.lunchFood.push(food);
+      break;
+    }
+    case 'dinner': {
+      this.lunchFood.push(food);
+      break;
+    }
+    case 'dessert': {
+      this.lunchFood.push(food);
+      break;
+    }
+    default: {
+      console.log('Food does not have the correct type');
+      break;
+   }
+
+   }
+  }
 }
