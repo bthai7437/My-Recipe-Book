@@ -16,11 +16,14 @@ export class RecipeComponent implements OnInit {
 
   ngOnInit() {
       this.foodService.getFoods().subscribe((data) => {
-        this.foods = data;
+        this.parseFoods = data;
         let resources = data["foods"];
         for(var i=0;i<resources.length;i++){
           this.parseToFood(resources[i]);
         }
+      });
+      this.foods.forEach(food => {
+        console.log(food.title);
       });
   }
 
@@ -30,12 +33,8 @@ export class RecipeComponent implements OnInit {
   food.ingredients = resource["ingredients"];
   food.qty = resource["qty"];
   food.foodImage = resource["foodImage"];
-  
-  console.log(food.title);
-  console.log(food.ingredients);
-  console.log(food.qty);
-  console.log(food.foodImage);
 
-  this.parseFoods.push(food);
+  this.foods.push(food);
  }
+
 }

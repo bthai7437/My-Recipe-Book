@@ -6,6 +6,12 @@
 }
 
 img{
-  width: 400px;
-  height: 400px;
+  /*width: 400px;
+  height: 400px;*/
+  position: relative;
+    float: left;
+    width:  400px;
+    height: 400px;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }

@@ -10,10 +10,14 @@ import { Food } from '../food';
 export class RecipeCardComponent implements OnInit {
 
   @Input() food: Food;
-  aFood: string;
+  apiUrl = 'http://localhost:3000/';
+  foodImage: any;
+
+
   constructor() {
   }
 
-  ngOnInit() {}
-
+  ngOnInit() {
+    this.food.foodImage = this.apiUrl + this.food.foodImage;
+  }
 }
