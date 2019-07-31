@@ -1,9 +1,17 @@
 .title {
 	margin-left: 32px;
     margin-right: 32px;
-    cursor: pointer;
+    
 }
 
-span {
-    padding-right: 1rem;
+mat-toolbar-row {
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+.spacer {
+    flex: 1 1 auto;
 }
