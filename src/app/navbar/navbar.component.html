@@ -1,39 +1,13 @@
 <mat-toolbar>
-  
-    <button 
-        mat-button 
-        color="white" 
-        style="font-size: 50px;"
-        [routerLink]="['/home']">
-                <i class="fa fa-home"></i>
-    </button>
-    
-    <button  
-        mat-raised-button 
-        color="white"
-        [routerLink]="['/recipe']">
-            Cooking Recipes
-    </button>
+  <mat-toolbar-row>
+    <div class="container">
+            <span class="title" routerLink="home">My Recipies</span>
+            <a mat-button routerLink="recipe">Recipe</a>
+            <a mat-button routerLink="marketplace">Marketplace</a>
+            <a mat-button routerLink="kitchen">Kitchen</a>
+            <span class="spacer"></span>
+            <a style="float: right" mat-button routerLink="profile"> <i class="fa fa-user-circle"></i> </a>
 
-    <button  
-        mat-raised-button 
-        color="white"
-        [routerLink]="['/marketplace']">
-            Marketplace
-    </button>
-
-    <button  
-        mat-raised-button 
-        color="white"
-        [routerLink]="['/kitchen']">
-            Kitchen
-    </button>
-
-    <button  
-        mat-raised-button
-        color="white"
-        [routerLink]="['/profile']">
-            Profile
-    </button>
-  
+    </div>
+  </mat-toolbar-row>
 </mat-toolbar>

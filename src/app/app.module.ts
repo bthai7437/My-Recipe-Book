@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule,
          MatButtonModule,
-         MatCardModule} from '@angular/material';
+         MatCardModule,MatIconModule} from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
@@ -34,6 +34,7 @@ import { FoodDataService } from './food-data.service';
   ],
   imports: [
     BrowserModule,
+    MatIconModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
