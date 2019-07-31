@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> {{ food.title }} </mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src= {{food.foodImage}} alt="default food">
+  <mat-card-content>
+   
+      <div *ngFor="let ingredient of food.ingredients;let i=index">
+          <p style = "padding-left: 5px">{{ ingredient }}  {{ food.qty[i] }} </p>
+      </div>
+   
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Favourite</button>
+    <button mat-button>Next</button>
+  </mat-card-actions>
+</mat-card>
