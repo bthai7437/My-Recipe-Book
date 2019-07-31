@@ -1,8 +1,8 @@
 Notes for running this app locally:
 
--After cloning the repo, install dependencies with 'npm install'
--Content for this app resides in a Node.js server in the separate repo Foods-API
--The Node.js server can be run with 'node server'
+-After cloning the repo, install dependencies with 'npm install'  
+-Content for this app resides in a Node.js server in the separate repo Foods-API  
+-The Node.js server can be run with 'node server'  
 
 Standard Angular readme follows:
 
