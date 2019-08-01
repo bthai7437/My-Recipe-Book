@@ -1,31 +1,7 @@
+<mat-grid-list cols="4" >
+    <mat-grid-tile
+        *ngFor="let lunch of lunchFood" >
+        <app-recipe-card [food] = "lunch"></app-recipe-card>
+    </mat-grid-tile>
+</mat-grid-list>
 
-<div class = "center">
-    <img src="\assets\Images\recipe-cooking.jpg" class="bg">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-4" *ngFor="let breakfast of breakfastFood">
-                    <app-recipe-card [food] = "breakfast"></app-recipe-card>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
-        <div *ngFor="let lunch of lunchFood">
-            <app-recipe-card [food] = "lunch"></app-recipe-card>
-        </div>
-    </div>
-
-    <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
-        <div *ngFor="let dinner of dinnerFood">
-            <app-recipe-card [food] = "dinner"></app-recipe-card>
-        </div>
-    </div>
-
-    <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
-        <div *ngFor="let dessert of desertFood">
-            <app-recipe-card [food] = "dessert"></app-recipe-card>
-        </div>
-    </div>
-
-</div>
