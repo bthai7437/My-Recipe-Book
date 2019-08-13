@@ -18,7 +18,6 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodDataService } from './food-data.service';
-import { UserLoginComponent } from './user-login/user-login.component';
 
 
 @NgModule({
@@ -30,8 +29,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
     KitchenComponent,
     ProfileComponent,
     RecipeComponent,
-    RecipeCardComponent,
-    UserLoginComponent
+    RecipeCardComponent
 
   ],
   imports: [
