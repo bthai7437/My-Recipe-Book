@@ -1,15 +1,16 @@
 .title {
-	margin-left: 32px;
-    margin-right: 32px;
     cursor: pointer;
 }
 
-mat-toolbar-row {
-    padding: 0px;
-}
-
-.container {
+#routes {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 9999;
+    width: 100%;
+    .leftnav {
+        flex-grow: 1;
+    }
 }
 
 .spacer {
