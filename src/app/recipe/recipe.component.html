@@ -1,15 +1,14 @@
 
-<div class = "center">
-    <img src="\assets\Images\recipe-cooking.jpg" class="bg">
-    <div class="container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px" *ngIf="foodsLoaded | async">
-        <app-recipe-card [foods] = "breakFoods"></app-recipe-card>
-        <app-recipe-card [foods] = "lunchFoods"></app-recipe-card>
-        <app-recipe-card [foods] = "dinnerFoods"></app-recipe-card>
-        <app-recipe-card [foods] = "dessertFoods"></app-recipe-card>
-    </div>
-
+<div id = "bg">
+    <img src="\assets\Images\recipe-cooking.jpg" class="stretch">
 </div>
 
+<div class="container" *ngIf="foodsLoaded | async">
+    <app-recipe-card [foods] = "breakFoods"></app-recipe-card>
+    <app-recipe-card [foods] = "lunchFoods"></app-recipe-card>
+    <app-recipe-card [foods] = "dinnerFoods"></app-recipe-card>
+    <app-recipe-card [foods] = "dessertFoods"></app-recipe-card>
+</div>
 
 
 

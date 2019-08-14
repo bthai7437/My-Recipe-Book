@@ -18,6 +18,7 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodDataService } from './food-data.service';
+import { UserFormComponent } from './user-form/user-form.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FoodDataService } from './food-data.service';
     KitchenComponent,
     ProfileComponent,
     RecipeComponent,
-    RecipeCardComponent
+    RecipeCardComponent,
+    UserFormComponent
 
   ],
   imports: [

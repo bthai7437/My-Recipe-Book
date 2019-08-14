@@ -5,6 +5,7 @@ import { KitchenComponent } from './kitchen/kitchen.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'kitchen', component: KitchenComponent, data: { animation: 'isRight' }},
   {path: 'profile', component: ProfileComponent, data: { animation: 'isRight' }},
   {path: 'recipe', component: RecipeComponent, data: { animation: 'isRight' }},
-  {path: 'marketplace', component: MarketplaceComponent, data: { animation: 'isRight' }}
+  {path: 'marketplace', component: MarketplaceComponent, data: { animation: 'isRight' }},
+  {path: 'user-form', component: UserFormComponent}
 
 ];
 
